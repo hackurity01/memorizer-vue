@@ -1,15 +1,20 @@
 {
-  "name": "memorizer",
-  "short_name": "memorizer",
+  "name": "Memorizer",
+  "short_name": "Memorizer",
   "icons": [
     {
-      "src": "./img/icons/android-chrome-192x192.png",
-      "sizes": "192x192",
+      "src": "./img/icons/128.png",
+      "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "./img/icons/android-chrome-512x512.png",
-      "sizes": "512x512",
+      "src": "./img/icons/152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/192.png",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ],
