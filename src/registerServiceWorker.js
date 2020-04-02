@@ -2,13 +2,17 @@
 
 import { register } from 'register-service-worker'
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production' || true) {
   register(`${process.env.BASE_URL}service-worker.js`, {
     ready () {
       console.log(
         'App is being served from cache by a service worker.\n' +
         'For more details, visit https://goo.gl/AFskqB'
       )
+
+			Notification.requestPermission(function(status) {
+				console.log('Notification permission status:', status);
+			});
     },
     registered () {
       console.log('Service worker has been registered.')
